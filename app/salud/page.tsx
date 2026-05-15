@@ -38,8 +38,7 @@ export default function SaludPage() {
           </TabsList>
           <TabsContent value="hoy">
             <SaludTracker
-              entry={todayEntry}
-              onUpdate={(updates) => updateDaily(today, updates)}
+              onSave={(updates) => updateDaily(today, updates)}
             />
           </TabsContent>
           <TabsContent value="graficos">

@@ -58,8 +58,7 @@ export default function TrabajoPage() {
           </TabsList>
           <TabsContent value="hoy">
             <TrabajoTracker
-              entry={todayEntry}
-              onUpdate={(updates) => updateDaily(today, updates)}
+              onSave={(updates) => updateDaily(today, updates)}
             />
           </TabsContent>
           <TabsContent value="graficos">

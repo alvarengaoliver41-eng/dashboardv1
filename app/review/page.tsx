@@ -25,8 +25,7 @@ export default function ReviewPage() {
           </TabsList>
           <TabsContent value="hoy">
             <ReviewForm
-              entry={todayEntry}
-              onUpdate={(updates) => updateDaily(today, updates)}
+              onSave={(updates) => updateDaily(today, updates)}
             />
           </TabsContent>
           <TabsContent value="historial">

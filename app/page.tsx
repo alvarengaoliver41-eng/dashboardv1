@@ -35,8 +35,7 @@ export default function HomePage() {
         <DailyScoreCard entry={todayEntry} date={today} />
 
         <QuickChecklist
-          entry={todayEntry}
-          onUpdate={(updates) => updateDaily(today, updates)}
+          onSave={(updates) => updateDaily(today, updates)}
         />
 
         <StreaksRow daily={data.daily} />
